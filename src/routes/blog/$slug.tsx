@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/site-header";
-import { postBySlug, type Post } from "@/data/blog";
-import { getPublicPost } from "@/lib/cms.functions";
+import { SiteFooter, SiteHeader } from "../../components/site-header";
+import { postBySlug, type Post } from "../../data/blog";
+import { getPublicPost } from "../../lib/cms.functions";
 
 export const Route = createFileRoute("/blog/$slug")({
   component: BlogPost,

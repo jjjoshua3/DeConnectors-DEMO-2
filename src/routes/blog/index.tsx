@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/site-header";
-import { posts as seedPosts, type Post } from "@/data/blog";
-import { getPublicPosts } from "@/lib/cms.functions";
+import { SiteFooter, SiteHeader } from "../../components/site-header";
+import { posts as seedPosts, type Post } from "../../data/blog";
+import { getPublicPosts } from "../../lib/cms.functions";
 
 export const Route = createFileRoute("/blog/")({
   component: BlogIndex,
